@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs project</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <ul class="tabs">
+        <li class="active greet_tab" data-tab-target>Greetings</li>
+        <li class="pic_prev_tab" data-tab-target>View picture</li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="active greet_container" data-tab-content>
+            <input type="text" placeholder=" Enter your name">
+            <button class="name_btn" type="submit">Submit</button>
+            <p class="greet_output">Hi, `${name}`!</p>
+        </div>
+
+        <div class="picture_container" data-tab-content>  
+            <button class="picture_btn" type="submit">Select picture</button>  
+            <img class="image" src="//sochain.com/content/img/doge.png">
+        </div>
+    </div>
+</body>
+</html>

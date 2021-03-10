@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #181C1F;
+    margin: auto;
+}
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+    margin-left: 580px;
+    margin-top: 60px;
+}
+
+.active[data-tab-target] {
+    background-color: #F8F4fC;
+}
+
+.greet_tab {
+    padding-right: 15px;
+    border-right: 2px solid #181C1F;
+}
+
+.greet_tab:hover {
+    background-color: #10D078;
+}
+
+.pic_prev_tab {
+    padding-left: 15px;
+    border-left: 2px solid #181C1F;
+}
+
+.pic_prev_tab:hover {
+    background-color: #10D078;
+}
+
+.tabs {
+    display: flex;
+    list-style-type: none;
+    justify-content:center;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-top: 300px;
+}
+
+input {
+    width: 300px;
+    height: 40px;
+    border-radius: 30px;
+    border: solid 2px #AAA;
+    outline: none;
+    text-align: center;
+    background: url(../front/images/help.png) no-repeat 5px;
+}
+
+button {
+    width: 300px;
+    height: 40px;
+    display: block;
+    margin-top: 30px;
+    margin-left: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #10D078;
+    color: white;
+    font-size: medium;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #68DC94;
+}
+
+p.greet_output {
+    margin-top: 30px;
+    margin-left: 90px;
+    font-size: large;
+    align-items: center;
+}
+
+.image {
+    margin-top: 30px;
+    margin-left: 60px;
+}
