@@ -55,7 +55,7 @@ input {
     border: solid 2px #AAA;
     outline: none;
     text-align: center;
-    background: url(../front/images/help.png) no-repeat 5px;
+    background: url(../images/help.png) no-repeat 8px;
 }
 
 button {
