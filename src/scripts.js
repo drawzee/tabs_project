@@ -8,9 +8,11 @@ let activateTab = function () {
 
     function selectTab() {
         tabBtn.forEach((item) => {
-            item.classList.remove('active');
-        });
-        this.classList.add('active');
+            item.classList.contains('active') ?
+            item.classList.remove('active') :
+            this.classList.add('active');
+        }); 
+
         activeTab = this.getAttribute('data-tab-target');
         selectContent(activeTab);
     }
