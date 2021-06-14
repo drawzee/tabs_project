@@ -27,3 +27,12 @@ let activateTab = function () {
 };
 
 activateTab();
+
+
+let getUserName = function () {
+    let userName = document.getElementById("user_input").value;
+    user_name.innerHTML = 'Nice to meet you, ' + userName + '!';
+    if (!userName) {
+        user_name.innerHTML = 'What\'s your name again?';
+    }
+};

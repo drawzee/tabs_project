@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,24 +8,36 @@
     <title>Tabs project</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <ul class="tabs">
-        <li class="active greet_tab" data-tab-target="tab_1">Greetings</li>
-        <li class="pic_prev_tab" data-tab-target="tab_2">View picture</li>
-    </ul>
 
-    <div class="tab-content">
-        <div class="active tab_1" data-tab-content>
-            <input type="text" placeholder=" Enter your name">
-            <button class="name_btn" type="submit">Submit</button>
-            <p class="greet_output">Hi, `${name}`!</p>
+    <div class="wrapper">
+
+        <div class="tabs">
+            <ul>
+                <li class="active tab-list" data-tab-target="tab_1">Name</li>
+                <li class="tab-list" data-tab-target="tab_2">Image</li>
+            </ul>
+        </div>
+            
+        <div class="tabs-content">
+            <div class="active content tab_1" data-tab-content>
+                <div class="form-container">
+                    <input type="text" id="user_input" placeholder="Introduce yourself...">
+                    <button type="submit" onclick="getUserName();">Submit</button>
+                    <p><span id='user_name'></span></p>
+                </div>
+            </div>
+
+            <div class="content tab_2" data-tab-content>
+                <button>Select your pitcure</button>
+                <img class="image" src="//sochain.com/content/img/doge.png">
+            </div>
         </div>
 
-        <div class="tab_2" data-tab-content>  
-            <button class="picture_btn" type="submit">Select picture</button>  
-            <img class="image" src="//sochain.com/content/img/doge.png">
-        </div>
     </div>
+
     <script src="scripts.js"></script>
+
 </body>
 </html>
