@@ -39,7 +39,7 @@ let getUserName = function () {
 
         if (userName) {
             user_name.innerHTML = 'Nice to meet you, ' + userName + '!';
-            	
+            console.log("Username accepted");
         } else {
             user_name.innerHTML = 'What\'s your name again?';
             console.log("Username not specified");
