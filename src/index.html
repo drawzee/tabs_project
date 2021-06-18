@@ -13,6 +13,7 @@
 
     <div class="wrapper">
 
+
         <div class="tabs">
             <ul>
                 <li class="active tab-list" data-tab-target="tab_1">Name</li>
@@ -24,17 +25,21 @@
             <div class="active content tab_1" data-tab-content>
                 <div class="form-container">
                     <input type="text" id="user_input" placeholder="Introduce yourself...">
-                    <button type="submit" onclick="getUserName();">Submit</button>
+                    <button type="submit" id="submitBtn">Submit</button>
                     <p><span id='user_name'></span></p>
                 </div>
             </div>
 
             <div class="content tab_2" data-tab-content>
-                <button>Select your pitcure</button>
-                <img class="image" src="//sochain.com/content/img/doge.png">
+                <div class="image-container">
+                    <img src="" alt="Gimme your image" class="user-image-preview">
+                    <span class="image-default">Gimme your image</span>
+                </div>
+                <input type="file" id="userImg">
             </div>
         </div>
 
+        
     </div>
 
     <script src="scripts.js"></script>

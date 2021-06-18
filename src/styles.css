@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 250px;
+    margin-top: 150px;
 }
 
 .tabs {
@@ -19,7 +19,7 @@ body {
 
 .tabs li {
     list-style-type: none;
-    padding: 25px;
+    margin: 0 40px 0 40px;
 }
 
 .tabs ul {
@@ -43,8 +43,7 @@ body {
 }
 
 .active.tab-list {
-    background: #10d07a28;
-    border-radius: 5px;
+    color: #10D078;
 }
 
 .content {
@@ -59,18 +58,19 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 60px 0 0 0;
 }
  
 .form-container p {
     text-align: center;
 }   
 
-.tabs-content input {
+.form-container input {
     width: 300px;
     height: 40px;
     margin-bottom: 30px;
     border-radius: 30px;
-    border: solid 2px #AAA;
+    border: 2px solid #AAA;
     outline: none;
     text-align: center;
     background: url(../images/help.png) no-repeat 8px;
@@ -83,7 +83,7 @@ body {
     outline: none;
     border-radius: 5px;
     background-color: #10D078;
-    color: white;
+    color: #fff;
     font-size: larger;
     font-weight: 300;
     cursor: pointer;
@@ -93,3 +93,50 @@ body {
     display: block;
     margin-top: 30px;
 }
+
+.image-container {
+    width: 640px;
+    height: 360px;
+    border: 2px solid #cccc;
+    margin: 0 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #AAA;
+}
+
+img.user-image-preview {
+    display: none;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 0 0 0;
+}
+
+.image-default {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-input {
+    color: transparent;
+}   
+
+input#userImg {
+    color: transparent;
+}
+
+input[type=file]::file-selector-button {
+    width: 160px;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #10D078;
+    color: #ffff;
+    font-size: larger;
+    font-weight: 100;
+    cursor: pointer;
+}
+    
