@@ -15,6 +15,7 @@ let activateTab = function () {
 
         activeTab = this.getAttribute('data-tab-target');
         selectContent(activeTab);
+        console.log("Tab switched");
     }
     
     function selectContent(activeTab) {
@@ -35,9 +36,13 @@ let getUserName = function () {
     submitBtn.addEventListener("click", function () {
 
         let userName = document.getElementById("user_input").value;
-        user_name.innerHTML = 'Nice to meet you, ' + userName + '!';
-        if (!userName) {
+
+        if (userName) {
+            user_name.innerHTML = 'Nice to meet you, ' + userName + '!';
+            	
+        } else {
             user_name.innerHTML = 'What\'s your name again?';
+            console.log("Username not specified");
         }
     });
 };
